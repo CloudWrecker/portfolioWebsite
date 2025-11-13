@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel | Fred Ngoma</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h2 class="logo">Fred Ngoma</h2>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="./about%20.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="./admin.html" class="active">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Login Section -->
+  <!-- Login Section -->
+<section class="login-section" id="loginSection">
+    <h2>Admin Login</h2><br><br>
+    <input type="password" id="adminPassword" placeholder="Enter Admin Password">
+    <br>
+    <button id="loginButton">Login</button>
+    <p id="loginMessage"></p>
+</section>
+  
+  
+  <!-- Admin Panel -->
+  <section class="admin-section" id="adminSection" style="display:none;">
+    <h2>Admin Panel - Messages</h2>
+    <div id="messagesList" class="messages-list"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Fred Ngoma. All rights reserved.</p>
+  </footer>
+
+  <script src="./js/admin.js"></script>
+  
+  <!-- Add this script to test if admin.js loads -->
+  //<script>
+   // console.log("✅ admin.html loaded");
+  //  console.log("✅ loginAdmin function exists:", typeof loginAdmin);
+  //</script>
+</body>
+</html>

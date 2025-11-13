@@ -1,0 +1,145 @@
+# 🌐 Personal Portfolio Website
+
+A responsive personal portfolio website built using **HTML, CSS, Node.js, Express, and MongoDB**.  
+It showcases your **profile, skills, and projects**, and includes a **contact form** that stores messages in a MongoDB database with an **admin dashboard** for viewing and deleting messages securely.
+
+---
+
+## 🚀 Features
+
+### 💼 Frontend
+- Responsive design (works on all devices)
+- Clean and professional layout
+- Pages:
+  - **Home/About** — brief bio and personal info  
+  - **Projects** — showcase of past work  
+  - **Contact** — message form that connects to backend
+
+### ⚙️ Backend
+- **Node.js + Express** server
+- **MongoDB** integration for storing messages
+- REST API for:
+  - Submitting contact messages (`POST /api/contact`)
+  - Fetching all messages (`GET /api/contact`)
+  - Deleting messages (`DELETE /api/contact/:id`)
+- **Admin login page** to view/delete messages (protected by password)
+
+---
+
+## 🧩 Project Structure
+
+project-root/
+│
+├── server/
+│ ├── index.js # Express server setup
+│ ├── models/
+│ │ └── Message.js # Mongoose model for contact form
+│ └── routes/
+│ ├── contact.js # Contact form routes
+│ └── admin.js # Admin authentication route
+│
+├── public/
+│ ├── index.html # About page
+│ ├── projects.html # Projects page
+│ ├── contact.html # Contact form
+│ ├── admin.html # Admin dashboard (protected)
+│ ├── css/
+│ │ └── style.css # Main styling
+│ └── js/
+│ ├── main.js # Contact form script
+│ └── admin.js # Admin dashboard logic
+│
+├── .env # MongoDB connection string
+├── package.json
+└── README.md
+
+
+
+
+
+---
+
+## 🛠️ Technologies Used
+
+- **Frontend:** HTML5, CSS3, Vanilla JavaScript  
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB with Mongoose  
+- **Security:** Admin password protection  
+- **Environment Variables:** dotenv
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/yourusername/portfolio-website.git
+cd portfolio-website
+
+2. Install dependencies
+
+npm install
+
+3. Configure environment variables
+
+Create a file named .env in the root directory and add:
+
+
+MONGO_URI=MONGO_URI="mongodb+srv://3RAI6H:814E9XDZrgzTPicb@portfoliowebsite.gz3qqxt.mongodb.net/contactDetails"
+PORT=5000
+ADMIN_PASS=Password123
+
+4. Run the server
+node server/index.js
+
+or (for auto-restart on save)
+
+npx nodemon server/index.js
+
+
+5. Visit your site
+
+Open your browser and go to:
+
+http://localhost:5000
+
+
+🔒 Admin Dashboard Access
+
+Visit:
+
+http://localhost:5000/admin.html
+
+
+1. Enter the admin password (set in .env file as ADMIN_PASS).
+
+2. View or delete messages stored in MongoDB.
+
+
+📦 API Endpoints
+Method	Endpoint	Description
+POST	/api/contact	Save a contact message
+GET	/api/contact	Fetch all messages
+DELETE	/api/contact/:id	Delete a specific message
+POST	/api/admin/login	Verify admin password
+
+
+🧠 Skills Demonstrated
+
+Responsive web design
+
+Frontend–backend integration
+
+MongoDB CRUD operations
+
+Express routing and middleware
+
+Simple authentication handling
+
+Clean code organization
+
+
+👤 Author
+
+Fred Ngoma
+
