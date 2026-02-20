@@ -1,34 +1,34 @@
-# portfolioWebsite
+ portfolioWebsite
 Website showcasing my projects 
-# 🌐 Personal Portfolio Website
+ 🌐 Personal Portfolio Website
 
-A responsive personal portfolio website built using **HTML, CSS, Node.js, Express, and MongoDB**.  
-It showcases your **profile, skills, and projects**, and includes a **contact form** that stores messages in a MongoDB database with an **admin dashboard** for viewing and deleting messages securely.
+A responsive personal portfolio website built using HTML, CSS, Node.js, Express, and MongoDB.  
+It showcases your profile, skills, and projects, and includes a contact form that stores messages in a MongoDB database with an admin dashboard for viewing and deleting messages securely.
 
 ---
 
-## 🚀 Features
+ 🚀 Features
 
-### 💼 Frontend
+ 💼 Frontend
 - Responsive design (works on all devices)
 - Clean and professional layout
 - Pages:
-  - **Home/About** — brief bio and personal info  
-  - **Projects** — showcase of past work  
-  - **Contact** — message form that connects to backend
+  - Home/About — brief bio and personal info  
+  - Projects — showcase of past work  
+  - Contact — message form that connects to backend
 
-### ⚙️ Backend
-- **Node.js + Express** server
-- **MongoDB** integration for storing messages
+ ⚙️ Backend
+- Node.js + Express server
+- MongoDB integration for storing messages
 - REST API for:
   - Submitting contact messages (`POST /api/contact`)
   - Fetching all messages (`GET /api/contact`)
   - Deleting messages (`DELETE /api/contact/:id`)
-- **Admin login page** to view/delete messages (protected by password)
+- Admin login page to view/delete messages (protected by password)
 
 ---
 
-## 🧩 Project Structure
+ 🧩 Project Structure
 
 project-root/
 │
@@ -58,19 +58,19 @@ project-root/
 
 ---
 
-## 🛠️ Technologies Used
+ 🛠️ Technologies Used
 
-- **Frontend:** HTML5, CSS3, Vanilla JavaScript  
-- **Backend:** Node.js, Express.js  
-- **Database:** MongoDB with Mongoose  
-- **Security:** Admin password protection  
-- **Environment Variables:** dotenv
+- Frontend: HTML5, CSS3, Vanilla JavaScript  
+- Backend: Node.js, Express.js  
+- Database: MongoDB with Mongoose  
+- Security: Admin password protection  
+- **Environment Variables: dotenv
 
 ---
 
-## ⚙️ Setup Instructions
+ ⚙️ Setup Instructions
 
-### 1. Clone the repository
+ 1. Clone the repository
 ```bash
 $ git clone https://github.com/yourusername/portfolioWebsite.git
 cd portfolioWebsite
